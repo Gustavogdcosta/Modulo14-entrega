@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto Seguro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho" class="sticky-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1 class="pb-2">Porto Seguro Journey</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#portoSeguro"> <i class="bi bi-house-door me-1 h5"></i> Conheça Porto Seguro </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#passeio"> <i class="bi bi-card-text me-1 h5"></i> Passeios </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"> <i class="bi bi-chat-left-text me-1 h5"></i> Fale Conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Inicio das seções-->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+        <!-- Inicio do carousel -->
+        <div id="sectionCarousel">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <!--Imagens do carousel-->
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="./Imagens/carousel/img1.jpg" alt="Porto seguro" class="d-block w-100">
+                    </div>
+
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./Imagens/carousel/img2.jpg" alt="Passeio" class="d-block w-100">
+                    </div>
+
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./Imagens/carousel/img3.jpg" alt="Passeio" class="d-block w-100">
+                    </div>
+
+                </div>
+                <!--Fim Imagens do carousel-->
+
+                <!--Botões de controle do carousel -->
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!--fim dos botões de controle do carousel -->
+
+                <!-- Botões de indicadores do carousel -->
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+                <!-- Fim dos Botões de indicadores do carousel -->
+            </div>
+        </div>
+        <!-- fim do carousel -->
+
+        <!-- Inicio da seção sobre -->
+        <section id="portoSeguro">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-5">
+                        <img src="./Imagens/frente.avif" alt="Imagem do restaure XXX" class="d-block w-100">
+                    </div>
+                    <div class="col-md-7  mt-3 mt-md-0">
+                        <div class="row">
+                            <h2> Sobre o <span> Porto Seguro</span></h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat natus animi, dolor quos eius perspiciatis ipsa harum officia sapiente sint, facilis voluptatem accusantium minima impedit vitae, modi laborum. Suscipit, nobis!</p>
+                        </div>
+                        <div class="row"></div>
+                            <h2> Atrações <span> Turísticas </span></h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat natus animi, dolor quos eius perspiciatis ipsa harum officia sapiente sint, facilis voluptatem accusantium minima impedit vitae, modi laborum. Suscipit, nobis!</p>
+                        <div class="row"></div>
+                        <ul>
+                            <li> Item 1</li>
+                            <li> Item 2</li>
+                            <li> Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fim da seção sobre  -->
+
+        <!-- Inicio da seção de passeio -->
+        <section id="passeio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pt-5 pb-5">  <span> Passeios </span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-passeio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#praias" class="fw-bold text-start nav-link active" >Conheça as praias</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mergulho" class="fw-bold text-start nav-link" >Mergulho</button>
+                            <button type="button" class="fw-bold text-start nav-link" data-bs-toggle="tab" data-bs-target="#ecoParque">Eco Parque</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="praias">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/Praia.jpg" alt="Praia X" class="d-block w-100">
+                                        <h4 class="fw-bold">Praia X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="mergulho">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/mergulho.jpeg" alt="Mergulho X" class="d-block w-100">
+                                        <h4 class="fw-bold">Mergulho X</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="ecoParque">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./Imagens/Passeios/parque.jpg" alt="Entrada" class="d-block w-100">
+                                        <h4 class="fw-bold">Entrada</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção de cardápio -->
+
+        <!-- Inicio da seção de contatos -->
+        <section id="contact">
+            <div class="container">
+                <div class="row pb-5 pt-5 text-center">
+                    <h2> Fale <span> Conosco </span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <label for="nome" class="form-label fs-5 h4">Por favor, digite seu nome:</label>
+                            <input class="form-control mb-2" name="username" type="text" id="nome" placeholder="Nome" required>
+                            <p></p>
+                            <label for="email" class="form-label fs-5 h4">Por favor, digite seu e-mail:</label>
+                            <input class="form-control mb-2 " name="useremail" type="email" id="email" placeholder="E-mail" required>
+                            <p></p>
+                            <label for="telefone"  class="form-label fs-5 h4">Por favor, digite seu telefone:</label>
+                            <input class="form-control mb-2" name="usertel" type="tel" id="telfone" required>
+                            <p></p>
+                            <label for="mensagem" class="form-label fs-5 h4">Por favor, digite sua mensagem:</label>
+                            <textarea class="form-control" type="text" id="mensagem" placeholder="O que podemos ajudar?" required></textarea>
+                            <button class="px-4 pw-2 fs-5 mt-3 mb-3 rounded-2" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <h3> <i class="bi bi-whatsapp h4 me-1"></i> Entre em contato </h3>
+                            <a href="#" title="Ir para o What's app"><img src="./Imagens/botao wpp.jpg" ></a>
+                        </div>
+                        <div class="row mt-5 mb-5">
+                            <h3> <i class="bi bi-hand-thumbs-up-fill h3 me-1"></i>Redes Sociais </h3>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Conheça nossa página no Facebook"> <i class="bi bi-facebook h4"></i> </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#" title="Conheça nossa página no Instagram"> <i class="bi bi-instagram h4"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Conheça nossa página no Youtube"> <i class="bi bi-youtube h4"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3> <i class="bi bi-cursor-fill h3"></i> Endereço </h3>
+                            <p class="mb-0">Rua treinado Boostrap, 11221,</p>
+                            <p>Belo Horizonte/MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Fim da seção de contatos -->
+
+    </div>
+    <!-- fim das seções-->
+
+    <footer>
+        <div class="container">
+            <h5 class="pb-1 pt-1"> &copy; EBAC2024</h5>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>    
